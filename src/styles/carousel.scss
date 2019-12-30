@@ -1,0 +1,28 @@
+.carousel {
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  overflow: hidden;
+  &__slide {
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    display: flex;
+    flex: 1;
+    margin: 0 0.25rem;
+
+    &--left {
+      transform: translateX(-25%);
+    }
+
+    &--right {
+      transform: translateX(25%);
+    }
+
+    &--active {
+      flex: 2;
+    }
+  }
+
+  &__nav {
+  }
+}
